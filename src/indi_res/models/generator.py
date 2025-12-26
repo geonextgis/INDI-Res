@@ -110,7 +110,7 @@ def normal_init(m, mean, std):
         m.weight.data.normal_(mean, std)
         m.bias.data.zero_()
 
-if __name__=='__main__':
+if __name__== '__main__':
     states_encoder = [None] * 7
     states_decoder = [None] * 7
     x = torch.randn((2, 4, 128, 128, 10), dtype=torch.float32) 
